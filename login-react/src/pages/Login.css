@@ -1,0 +1,173 @@
+:root {
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --accent: #0b5fff;
+  --danger: #d93025;
+  --success: #1e8e3e;
+  --muted: #6b7280;
+  --surface: #eef2ff;
+  font-family: Inter, "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+}
+
+body {
+  margin: 0;
+  background: var(--card);
+  color: #111827;
+}
+
+.login-page {
+  display: flex;
+  background: var(--bg);
+}
+
+.login-container {
+  width: 50%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.xnett-logo {
+  margin-bottom: 40px
+}
+
+.logo {
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.login-img {
+  width: 50%;
+  height: 100vh;
+  background-image: url("/public/omni_photo.png"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-form {
+  width: 100%;
+}
+
+h1 {
+  padding-top: 90px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 1px;
+}
+
+.login-desc {
+  color: var(--muted);
+  font-size: x-small;
+}
+
+.form {
+  width: 100%;
+}
+
+input {
+  font-size: x-small;
+}
+
+.form-group {
+  margin-left: 120px;
+  padding: 10px 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-control {
+  padding: 10px;
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: x-small;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.username {
+  padding: 10px;
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: x-small;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer-text {
+  color: var(--muted);
+  font-size: x-small;
+  margin-right: 35px;
+  margin-top: 150px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: small;
+  margin: 30px;
+  margin-left: 120px;
+  width: 55%;
+  font-weight: 700;
+  display: block;
+}
+
+@media screen and (max-width: 760px) {
+  .login-page {
+    flex-direction: row;
+  }
+  .login-container {
+    width: 100%;
+    margin: 19px 90px;
+  }
+
+  .logo {
+    margin-right: 50px;
+    /* margin-top: 10px; */
+  }
+  .form-group {
+    margin-left: 0;
+    padding: 10px 70px;
+  }
+  .form-control {
+    width: 80%;
+  }
+  .username {
+    width: 80%;
+  }
+  /* .btn-primary {
+    width: 80%;
+    margin-left: 0;
+  } */
+  .login-img {
+    display: none;
+  }
+  .btn-primary {
+    margin: 95px 65px;
+    width: 63%;
+    margin-top: 35px;
+  }
+  .footer-text {
+    margin-top: 90px;
+  }
+
+  h1 {
+    /* padding-top: 10px; */
+    margin-right: 50px;
+    /* margin-top: 50px; */
+  }
+  
+  .login-desc {
+    margin-right: 50px;
+  }
+}
